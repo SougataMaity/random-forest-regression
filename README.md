@@ -1,2 +1,2 @@
-# titinic_dicision_tree
-https://titanic-dcte.herokuapp.com/
+# Random Forest Regression
+[https://randomfores.herokuapp.com/](https://randomfores.herokuapp.com/)
