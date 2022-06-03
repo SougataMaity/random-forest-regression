@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}">
+    <title>Random forest</title>
+</head>
+
+<body>
+    <nav>
+        <h3>easyml</h3>
+        
+        <div class="data">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+    </nav>
+    <div class="row1">
+        <div class="col1">
+            <h1>Random Forest Regression</h1>
+            <h2>supervise learning algorithm that uses an ensemble <br>learning method for classification and regression</h2>
+            <a  href="https://github.com/SougataMaity/SougataMaity" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="col2">
+            <form action="{{url_for('predict')}}" method="post">
+                <label >CRIM</label> 
+                <input name = "var1" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label >ZN</label> 
+                <input name = "var2" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label >INDUS</label>
+                <input name = var3 type="number" placeholder="  11.14" step = 0.00001 required = "required"><br>
+                <label >CHAS</label> 
+                <input name = "var4" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label>NOX</label>
+                <input name = "var5" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label >RM</label> 
+                <input name = var6 type="number" placeholder="  0.55" step = 0.00001 required = "required"><br>
+                <label>AGE</label>
+                <input name = var7 type="number" placeholder="  6.28" step = 0.00001 required = "required"><br>
+                <label >DIS</label> 
+                <input name = "var8" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label >RAD</label> 
+                <input name = "var9" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label>TAX</label>
+                <input name = var10 type="number" placeholder="  408.23"  step = 0.00001 required = "required"><br>
+                <label >PTRATIO</label> 
+                <input name = "var11" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label >B</label> 
+                <input name = "var12" type="number" placeholder="   3.25" step = 0.00001 required = "required"><br>
+                <label>LSTAT</label>
+                <input name = var13 type="number" placeholder="  12.65"  step = 0.00001 required = "required"><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
